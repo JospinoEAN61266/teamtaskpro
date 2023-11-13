@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Team Task PRO - Universidad EAN - Jean Carlos Ospino</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&family=Open+Sans:wght@400;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="./css/index.css">
+</head>
+<body>
+  <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+    <div class="container-fluid">
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarTogglerDemo01" aria-controls="navbarTogglerDemo01" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarTogglerDemo01">
+        <a class="navbar-brand" href="#">Team Task PRO</a>
+        <ul class="navbar-nav me-auto mb-2 mb-lg-0 w-100">
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="#home">Inicio</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#who">Quienes confian en nosotros</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#pricing">Pricing</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#testimonials">Testimonios</a>
+          </li>
+          <li class="nav-item ms-auto">
+            <a class="nav-link" href="#" id="sign-up-link">Regístrate</a>
+          </li>
+          <li class="nav-item">
+            <a class="btn btn-primary px-4 rounded-pill ms-3" href="#" id="sign-in-link">Inicia Sesión</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+  
+  <!-- Modal -->
+  <div class="modal fade" id="start-now-modal" tabindex="-1" role="dialog" aria-labelledby="start-now-modal-title" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="start-now-modal-title">Modal title</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+          <div class="container-fluid">
+            <p>
+              Empezar es un muy sencillo, no es necesario un proceso de registro. Solo ingresa tu email y se cargará tu tablero en automático.
+              <br>
+              Una vez estés dentro, podrás completar tu perfil.
+            </p>
+
+            <form class="row" id="start-now-modal-form">
+              <div class="col mb-2">
+                <label for="email">Correo electrónico</label>
+                <input type="email" name="email" id="email" class="form-control" required>
+              </div>
+            </form>
+          </div>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-primary" id="start-now-modal-button">Empezar!</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <section class="wrapper">
+    <div class="p-5 mb-4 bg-light" id="home">
+      <div class="container py-5 text-center">
+        <p class="lead text-muted">
+          Conoce <b class="fw-bold">TeamTask PRO</b>
+        </p>
+        <h1 class="display-5 fw-bold text-uppercase">La herramienta perfecta para incrementar tu productividad planeando tus <span id="type" class="text-primary"></span></h1>
+        <p class="col-12 fs-4">
+          Lorem ipsum dolor sit amet consectetur, adipisicing elit. Maxime aperiam nostrum enim atque. Saepe aut provident optio corrupti neque, officia labore, eaque est cum non quis voluptas repudiandae, amet porro!
+        </p>
+        <button class="btn btn-primary btn-lg rounded-pill px-4" type="button" id="start-now-button">Empieza ahora</button>
+
+        <div class="d-flex flex-column flex-lg-row gap-4 justify-content-center mt-5">
+          <div class="text-center">
+            <div class="count fw-bold">500.000</div>
+            Usuarios registrados
+          </div>
+
+          <div class="text-center">
+            <div class="count fw-bold">⭐ 4.5 / 5.0</div>
+            Excelente Feedback
+          </div>
+
+          <div class="text-center">
+            <div class="count fw-bold">+100</div>
+            Lenguajes soportados
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="container">
+      <!-- Quienes confian en nosotros -->
+      <div class="row py-5" id="who">
+        <div class="col-12 text-center mb-4">
+          <h1 class="fw-bold mb-4">Quienes confian en Team Task PRO</h1>
+          <p class="lead text-muted">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Impedit rerum ea iusto velit est eaque minus ipsum fuga. Dignissimos explicabo ad adipisci eum qui cum amet eveniet numquam quos modi.</p>
+        </div>
+        <div class="col-12">
+          <div class="d-flex flex-wrap justify-content-evenly">
+            <figure>
+              <img src="https://via.placeholder.com/150x75" alt="Partner">
+            </figure>
+            <figure>
+              <img src="https://via.placeholder.com/150x75" alt="Partner">
+            </figure>
+            <figure>
+              <img src="https://via.placeholder.com/150x75" alt="Partner">
+            </figure>
+            <figure>
+              <img src="https://via.placeholder.com/150x75" alt="Partner">
+            </figure>
+          </div>
+        </div>
+      </div>
+
+      <div class="row align-items-md-stretch py-5" id="pricing">
+        <div class="col-md-6 mb-3">
+          <div class="h-100 p-5 text-white bg-dark rounded-3">
+            <h2>Some random title</h2>
+            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Eum et, quia modi nulla aliquid cupiditate doloribus architecto neque. Nostrum officiis iure itaque dolore culpa pariatur inventore incidunt vitae saepe aliquam?</p>
+            <button class="btn btn-outline-light" type="button">Call to action</button>
+          </div>
+        </div>
+        <div class="col-md-6 mb-3">
+          <div class="h-100 p-5 bg-light border rounded-3">
+            <h2>Another random title</h2>
+            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Repellendus eveniet consectetur dolores dolor voluptate debitis, deleniti dolorum inventore esse. Expedita laborum tenetur dolore magni voluptate eaque tempora modi maiores tempore!</p>
+            <button class="btn btn-outline-secondary" type="button">Call to action</button>
+          </div>
+        </div>
+      </div>
+
+      <!-- Testimonios -->
+      <div class="row py-5" id="testimonials">
+        <div class="col-12 text-center mb-4">
+          <h1 class="fw-bold mb-4">Lo que dicen algunos de nuestros usuarios</h1>
+          <p class="lead text-muted">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Impedit rerum ea iusto velit est eaque minus ipsum fuga. Dignissimos explicabo ad adipisci eum qui cum amet eveniet numquam quos modi.</p>
+        </div>
+        <div class="col-12">
+          <div class="d-flex flex-wrap justify-content-center gap-4">
+            <figure class="d-flex align-items-center gap-4">
+              <img src="https://via.placeholder.com/75x75" alt="User avatar" class="rounded-circle">
+              <div class="testimonial">
+                <blockquote class="blockquote">
+                  <p>A well-known quote, contained in a blockquote element.</p>
+                </blockquote>
+                <figcaption class="blockquote-footer">
+                  Someone famous in <cite title="Source Title">Source Title</cite>
+                </figcaption>
+              </div>
+            </figure>
+
+            <figure class="d-flex align-items-center gap-4">
+              <img src="https://via.placeholder.com/75x75" alt="User avatar" class="rounded-circle">
+              <div class="testimonial">
+                <blockquote class="blockquote">
+                  <p>A well-known quote, contained in a blockquote element.</p>
+                </blockquote>
+                <figcaption class="blockquote-footer">
+                  Someone famous in <cite title="Source Title">Source Title</cite>
+                </figcaption>
+              </div>
+            </figure>
+
+            <figure class="d-flex align-items-center gap-4">
+              <img src="https://via.placeholder.com/75x75" alt="User avatar" class="rounded-circle">
+              <div class="testimonial">
+                <blockquote class="blockquote">
+                  <p>A well-known quote, contained in a blockquote element.</p>
+                </blockquote>
+                <figcaption class="blockquote-footer">
+                  Someone famous in <cite title="Source Title">Source Title</cite>
+                </figcaption>
+              </div>
+            </figure>
+
+            <figure class="d-flex align-items-center gap-4">
+              <img src="https://via.placeholder.com/75x75" alt="User avatar" class="rounded-circle">
+              <div class="testimonial">
+                <blockquote class="blockquote">
+                  <p>A well-known quote, contained in a blockquote element.</p>
+                </blockquote>
+                <figcaption class="blockquote-footer">
+                  Someone famous in <cite title="Source Title">Source Title</cite>
+                </figcaption>
+              </div>
+            </figure>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- scripts -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+  <script src="./js/index.js"></script>
+</body>
+</html>

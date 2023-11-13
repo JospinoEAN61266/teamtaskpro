@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Dashboard :: Team Task PRO - Universidad EAN - Jean Carlos Ospino</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&family=Open+Sans:wght@400;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="../css/dashboard.css">
+</head>
+<body>
+  <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+    <div class="container-fluid">
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarTogglerDemo01" aria-controls="navbarTogglerDemo01" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarTogglerDemo01">
+        <a class="navbar-brand" href="#">Team Task PRO</a>
+        <ul class="navbar-nav me-auto mb-2 mb-lg-0 w-100">
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="#">Dashboard</a>
+          </li> 
+          <li class="nav-item ms-auto">
+            <a class="nav-link" href="#" id="sign-up-link">Perfil</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#" id="sign-out-link">Cerrar Sesión</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <div class="modal fade" tabindex="-1" id="new-item-modal">
+    <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title">Agregar nuevo item</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+          <form id="new-item-form" class="row">
+            <div class="col-12 mb-2">
+              <label for="title">Título</label>
+              <input type="text" name="title" id="title" class="form-control">
+            </div>
+            <div class="col-12 mb-2">
+              <label for="description">Descripción</label>
+              <textarea name="description" id="description" class="form-control"></textarea>
+            </div>
+            <div class="col-12 mb-2">
+              <label for="priority">Prioridad</label>
+              <select type="text" name="priority" id="priority" class="form-control">
+                <option value="1">1 puntos</option>
+                <option value="2">2 puntos</option>
+                <option value="3">3 puntos</option>
+                <option value="4">4 puntos</option>
+                <option value="5">5 puntos</option>
+              </select>
+            </div>
+          </form>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cancelar</button>
+          <button type="button" class="btn btn-primary" id="new-item-submit-btn">Agregar item</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <section class="wrapper">
+    <div class="container d-flex flex-column h-100">
+      <div class="kanban--info row pt-3">
+        <div class="col-12">
+          <h3 class="fw-bold">Nombre del Proyecto</h3>
+          <p class="text-muted">Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptate, dignissimos veritatis, veniam quidem distinctio pariatur consequuntur corrupti modi perferendis, doloribus voluptatem quos ab quaerat officiis aspernatur voluptatum optio. Voluptatum, alias?</p>
+        </div>
+      </div>
+      <div class="kanban--board pb-4">
+        <div class="kanban--column flex-grow-1 bg-light p-3">
+          <div class="kanban--column-title">
+            <span>Pendiente</span>
+            <span class="counter"></span>
+          </div>
+          <div id="pending" class="tasks-container"></div>
+          <a href="javascript:;" class="kanban--column-add-new-item-link">Crear nueva tarea</a>
+        </div>
+        <div class="kanban--column flex-grow-1 bg-light p-3">
+          <div class="kanban--column-title">
+            <span>En Progreso</span>
+            <span class="counter"></span>
+          </div>
+          <div id="in-progress" class="tasks-container"></div>
+        </div>
+        <div class="kanban--column flex-grow-1 bg-light p-3">
+          <div class="kanban--column-title">
+            <span>En Revisión</span>
+            <span class="counter"></span>
+          </div>
+          <div id="review" class="tasks-container"></div>
+        </div>
+        <div class="kanban--column flex-grow-1 bg-light p-3">
+          <div class="kanban--column-title">
+            <span>Completado</span>
+            <span class="counter"></span>
+          </div>
+          <div id="done" class="tasks-container"></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- scripts -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+  <script src="https://code.jquery.com/jquery-3.6.0.js"></script>
+  <script src="https://code.jquery.com/ui/1.13.2/jquery-ui.js"></script>
+  <script src="../js/dashboard.js"></script>
+</body>
+</html>

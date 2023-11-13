@@ -1,0 +1,9 @@
+* {
+  font-family: 'Open Sans', Arial, Helvetica, sans-serif;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+}
